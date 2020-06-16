@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   default values already pre-populated.  
 
 ### Changed
+- Generated `ToWire` methods no longer mutate the receiver with default values, 
+  leaving nil fields as nil on the object though serializing the defaults.   
 - gen: Redefine Options.Plugin as a struct usable outside go.uber.org/thriftrw.
 
 ## [1.23.0] - 2020-03-31
